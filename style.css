@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.cus-card {
+  max-width: 27rem;
+}
+.cus-btn {
+  padding-inline: 4rem;
+  padding-block: 0.2rem;
+  border-radius: 0.3rem;
+  background-color: rgb(181, 125, 233);
+  color: white;
+  border-style: none;
+  font-size: 1.3rem;
+  letter-spacing: 0.07rem;
+}
+.cus-btn:hover {
+  transition: ease-in-out 200ms;
+  background-color: rgb(191, 143, 236);
+}
+
+@media only screen and (max-width: 750px) {
+    .cus-card {
+        max-width: 23rem;
+      }
+      .cus-btn{
+        padding-inline: 3rem;
+      }
+}
+@media only screen and (max-width: 380px){
+
+    .cus-card {
+        max-width: 90%;
+      }
+      .cus-btn{
+        padding-inline: 2rem;
+      }
+}
